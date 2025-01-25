@@ -1,12 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class LetterSpawner : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     public GameObject letterPrefab; 
     public Transform spawnPoint;
     public float minSpawnInterval = 1f;
     public float maxSpawnInterval = 5f;
+    public float speed = 1f;
+    public float direction = 1f; // 1 - вправо, -1 - влево
 
     private void Start()
     {
@@ -34,5 +36,10 @@ public class LetterSpawner : MonoBehaviour
         {
             Debug.LogWarning("Problem in Bird.cs in SpawnLetter");
         }
+    }
+
+    private void Update()
+    {
+        transform.Translate(new Vector3(-1f * direction * speed * Time.deltaTime, 0, 0));        
     }
 }

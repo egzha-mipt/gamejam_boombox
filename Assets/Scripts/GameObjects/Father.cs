@@ -1,3 +1,4 @@
+using System.Runtime.Serialization;
 using UnityEngine;
 
 public class Father : MonoBehaviour
@@ -13,7 +14,7 @@ public class Father : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
 
         transform.Translate(new Vector3(moveInput * speed * Time.deltaTime, 0, 0));
-        transform.Translate(new Vector3(0, verticalSpeed * Time.deltaTime, 0));
+        // transform.Translate(new Vector3(0, verticalSpeed * Time.deltaTime, 0));
 
         //grid limit for father
         float clampedX = Mathf.Clamp(transform.position.x, -0.5f, 8+2.2f);
@@ -25,16 +26,15 @@ public class Father : MonoBehaviour
     
     public void Die()
     {
-        Debug.Log("Игрок погиб!");
+        Debug.Log("Отец погиб!");
         // UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void OnCollisionEnter2D (Collision2D collision)
     {
         GameObject collidedWith = collision.gameObject;
-        Debug.Log("OnCollisionEnter2D works");
         if (collidedWith.tag == "Letter"){
-            Debug.Log("OnCollisionEnter2D works");
+            Debug.Log("Отец поймал письмо!");
             Destroy(collidedWith);
         }
     }
@@ -42,7 +42,19 @@ public class Father : MonoBehaviour
     void OnTriggerEnter2D (Collider2D collision)
     {
         // GameObject collidedWith = collision.gameObject;
-        Debug.Log("Trigger works");
+        GameObject collidedCell = collision.gameObject;
+        if (collidedCell.tag == "KillCell")
+        {
+            Die();
+        }
+
+        if (collision.CompareTag("PosteCell"))
+        {
+            Debug.Log("Отец пришел на почту!");
+
+            EventManager.Instance.PosteCellTriggered(collision.transform.position);
+        }
+        
     }
 
 }

@@ -7,11 +7,13 @@ TagManager:
   - Tile
   - KillCell
   - Letter
+  - EventManager
+  - PosteCell
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tiles
   - Water
   - UI
   - 
