@@ -478,10 +478,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddacb776c6361c4883dd7357eb406f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileType1: {fileID: 1694932434}
-  tileType2: {fileID: 1104739348}
-  tileType3: {fileID: 1694932434}
-  tileType4: {fileID: 1694932434}
+  tileArray:
+  - {fileID: 1694932434}
+  - {fileID: 1104739348}
+  - {fileID: 1694932434}
   rows: 20
   columns: 5
   tileSize: 1.4

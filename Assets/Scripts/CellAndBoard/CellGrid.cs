@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    public GameObject tileType1;
-    public GameObject tileType2;
-    public GameObject tileType3;
-    public GameObject tileType4;
+    public GameObject[] tileArray;
+
 
     public int rows = 40;
     public int columns = 5;
@@ -22,7 +20,7 @@ public class GridManager : MonoBehaviour
         {
             for (int y = 0; y < rows; y++)
             {
-                GameObject tilePrefab = GetRandomTile();
+                GameObject tilePrefab = tileArray[GetRandomTile()];
 
                 GameObject tile = Instantiate(tilePrefab, new Vector3(x * tileSize, y * tileSize, 0), Quaternion.identity);
 
@@ -31,22 +29,10 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    GameObject GetRandomTile()
+    int GetRandomTile()
     {
-        int randomIndex = Random.Range(0, 3);
+        int randomIndex = Random.Range(0, tileArray.Length);
 
-        switch (randomIndex)
-        {
-            case 0:
-                return tileType1;
-            case 1:
-                return tileType2;
-            case 2:
-                return tileType3;
-            case 3:
-                return tileType4;   
-            default:
-                return tileType1;
-        }
+        return randomIndex;
     }
 }
