@@ -105,9 +105,9 @@ TextureImporter:
         2025-01-25 231814_0"
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 291
+        width: 288
         height: 287
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
