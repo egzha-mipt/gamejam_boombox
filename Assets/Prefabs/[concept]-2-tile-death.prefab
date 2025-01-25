@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8453965710505203866}
   - component: {fileID: 993053621104003867}
   - component: {fileID: 2975196727546163730}
-  - component: {fileID: 6883384085306744995}
   - component: {fileID: 6942027719400455380}
   m_Layer: 0
   m_Name: '[concept]-2-tile-death'
@@ -120,7 +119,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -136,33 +135,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.44, y: 1.44}
   m_EdgeRadius: 0
---- !u!50 &6883384085306744995
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8612833136220438460}
-  m_BodyType: 2
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &6942027719400455380
 MonoBehaviour:
   m_ObjectHideFlags: 0

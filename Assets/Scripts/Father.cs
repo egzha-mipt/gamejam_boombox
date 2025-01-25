@@ -29,15 +29,20 @@ public class Father : MonoBehaviour
         // UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void OnCollisionEnter2D (BoxCollider2D collision)
+    void OnCollisionEnter2D (Collision2D collision)
     {
         GameObject collidedWith = collision.gameObject;
         Debug.Log("OnCollisionEnter2D works");
-        Debug.Log(collidedWith.tag);
-        if (collidedWith.tag == "KillCell"){
+        if (collidedWith.tag == "Letter"){
             Debug.Log("OnCollisionEnter2D works");
             Destroy(collidedWith);
         }
+    }
+
+    void OnTriggerEnter2D (Collider2D collision)
+    {
+        // GameObject collidedWith = collision.gameObject;
+        Debug.Log("Trigger works");
     }
 
 }
