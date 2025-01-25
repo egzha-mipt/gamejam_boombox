@@ -21,9 +21,6 @@ public class KillCell : MonoBehaviour
 
     void KillPlayer(GameObject player)
     {
-        // Отключаем игрока или реализуем другую логику
         player.SetActive(false);
-        // Например, можно вызвать перезапуск уровня
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
