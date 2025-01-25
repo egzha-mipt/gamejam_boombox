@@ -67,7 +67,7 @@ public class RunnerManager : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+    void Update()
     {
         if (activePrefabs.Count > 0)
         {
