@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "gamejame_boombox.sln"
+    "dotnet.defaultSolution": "gamejam_boombox.sln"
 }
