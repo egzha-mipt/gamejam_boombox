@@ -7,7 +7,7 @@ public class GridManager : MonoBehaviour
     public GameObject tileType3;
     public GameObject tileType4;
 
-    public int rows = 20;
+    public int rows = 40;
     public int columns = 5;
     public float tileSize = 1f;
 
