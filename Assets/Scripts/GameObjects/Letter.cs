@@ -6,7 +6,7 @@ public class Letter : MonoBehaviour
     public float lifetime = 5f;
 
     private Rigidbody2D rb;
-    private Vector3 direction = Vector3.down; // вниз
+    private Vector2 direction = Vector2.down; // вниз
 
     void Awake()
     {
@@ -36,9 +36,9 @@ public class Letter : MonoBehaviour
         }
     }
 
-    public void SetDirection(Vector3 newDirection)
+    public void SetDirection(Vector2 newDirection)
     {
-        if (newDirection != Vector3.zero)
+        if (newDirection != Vector2.zero)
         {
             direction = newDirection.normalized; 
         }

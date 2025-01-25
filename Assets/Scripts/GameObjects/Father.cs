@@ -4,7 +4,7 @@ using UnityEngine;
 public class Father : MonoBehaviour
 {
     public float speed = 5f; 
-    private float verticalSpeed = 0f;
+    // private float verticalSpeed = 0f;
 
     // public float rollMult = -45;
     // public float pitchMult = 30;

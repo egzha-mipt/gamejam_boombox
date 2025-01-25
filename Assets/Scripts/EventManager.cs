@@ -9,6 +9,7 @@ public class EventManager : MonoBehaviour
         // Создаём синглтон
         if (Instance == null)
         {
+            Debug.Log("EventManager создан");
             Instance = this;
         }
         else

@@ -8,7 +8,8 @@ public class Bird : MonoBehaviour
     public float minSpawnInterval = 1f;
     public float maxSpawnInterval = 5f;
     public float speed = 1f;
-    public float direction = 1f; // 1 - вправо, -1 - влево
+    public float direction = -1f; // 1 - вправо, -1 - влево
+    private bool hasDroppedLetter = false;
 
     private void Start()
     {
@@ -21,13 +22,17 @@ public class Bird : MonoBehaviour
         {
             float waitTime = Random.Range(minSpawnInterval, maxSpawnInterval);
             yield return new WaitForSeconds(waitTime);
-
-            SpawnLetter();
+            if (!hasDroppedLetter)
+            {
+                SpawnLetter();
+            }
         }
     }
 
     private void SpawnLetter()
     {
+        hasDroppedLetter = true;     
+           
         if (letterPrefab != null && spawnPoint != null)
         {
             Instantiate(letterPrefab, spawnPoint.position, Quaternion.identity);
@@ -40,6 +45,6 @@ public class Bird : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(new Vector3(-1f * direction * speed * Time.deltaTime, 0, 0));        
+        transform.Translate(new Vector3(-1f * direction * speed * Time.deltaTime, 0, 0)); 
     }
 }
