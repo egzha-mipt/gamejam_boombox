@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3be49b6ad1201aa41bb082997e538ed4
+guid: c876ffe6b05c518419b464dff95830b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8441751147883183104
-    second: '[concept]-father_0'
+      213: 4875554543680829717
+    second: '[consept]bird_0'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[concept]-father_0'
+      name: '[consept]bird_0'
       rect:
         serializedVersion: 2
-        x: 54
-        y: 14
-        width: 348
-        height: 597
+        x: 11
+        y: 13
+        width: 105
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00cb2d351ff172570800000000000000
-      internalID: 8441751147883183104
+      spriteID: 5193323960379a340800000000000000
+      internalID: 4875554543680829717
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      '[concept]-father_0': 8441751147883183104
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

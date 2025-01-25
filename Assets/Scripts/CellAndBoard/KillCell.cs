@@ -7,6 +7,16 @@ public class KillCell : MonoBehaviour
         Debug.Log("kill cell is ready");
     }
 
+
+
+    void KillPlayer(GameObject player)
+    {
+        player.SetActive(false);
+    }
+
+    void Update() 
+    {
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("KillCell works");
@@ -18,10 +28,5 @@ public class KillCell : MonoBehaviour
         } else{
             Debug.Log("Father is alive!");
         }
-    }
-
-    void KillPlayer(GameObject player)
-    {
-        player.SetActive(false);
     }
 }

@@ -4,10 +4,11 @@ public class GridManager : MonoBehaviour
 {
     public GameObject[] tileArray;
 
-
     public int rows = 40;
-    public int columns = 5;
+    public int columns = 8;
     public float tileSize = 1f;
+
+    public float speed = 1f;
 
     void Start()
     {
@@ -34,5 +35,10 @@ public class GridManager : MonoBehaviour
         int randomIndex = Random.Range(0, tileArray.Length);
 
         return randomIndex;
+    }
+
+    void Update()
+    {
+        transform.Translate(new Vector3(0, -speed * Time.deltaTime, 0));
     }
 }
