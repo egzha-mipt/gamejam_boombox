@@ -6,7 +6,7 @@ public class CellGrid : MonoBehaviour
     public GameObject tileType2;
     public int rows = 20;
     public int columns = 5;
-    public float tileSize = 1.4f;
+    public float tileSize = 1f;
 
     void Start()
     {
