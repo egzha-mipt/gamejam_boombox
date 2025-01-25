@@ -4,12 +4,13 @@ public class KillCell : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log("kill sell is ready");
+        Debug.Log("kill cell is ready");
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("KillCell works");
+
         if (other.CompareTag("Player"))
         {
             Debug.Log("Father is dead!");

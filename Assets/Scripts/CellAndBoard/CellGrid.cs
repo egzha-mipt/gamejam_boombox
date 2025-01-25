@@ -33,7 +33,7 @@ public class GridManager : MonoBehaviour
 
     GameObject GetRandomTile()
     {
-        int randomIndex = Random.Range(0, 4);
+        int randomIndex = Random.Range(0, 3);
 
         switch (randomIndex)
         {
@@ -44,7 +44,7 @@ public class GridManager : MonoBehaviour
             case 2:
                 return tileType3;
             case 3:
-                return tileType4;
+                return tileType4;   
             default:
                 return tileType1;
         }
