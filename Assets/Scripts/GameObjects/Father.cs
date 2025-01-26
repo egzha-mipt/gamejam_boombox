@@ -29,15 +29,16 @@ public class Father : MonoBehaviour
         Debug.Log("Отец погиб!");
         // UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    //Перенес логику OnCollisionEnter2D в отдельный скрипт 
 
-    void OnCollisionEnter2D (Collision2D collision)
+    /*void OnCollisionEnter2D (Collision2D collision)
     {
         GameObject collidedWith = collision.gameObject;
         if (collidedWith.tag == "Letter"){
             Debug.Log("Отец поймал письмо!");
             Destroy(collidedWith);
         }
-    }
+    }*/
 
     void OnTriggerEnter2D (Collider2D collision)
     {

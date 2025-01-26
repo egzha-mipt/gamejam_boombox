@@ -84,9 +84,9 @@ public class RunnerManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        /*if (Input.GetKeyDown(KeyCode.Space)) {
             NeedMailPrefab();
-        }
+        }*/
         if (activePrefabs.Count > 0)
         {
             GameObject firstPrefab = activePrefabs.Peek(); // Берём первый префаб в очереди
