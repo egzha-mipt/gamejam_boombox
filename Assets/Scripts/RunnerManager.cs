@@ -13,6 +13,7 @@ public class RunnerManager : MonoBehaviour
 
     public Transform spawnPoint; // Точка появления префаба
     public Transform destroyPoint; // Точка, после которой префаб уничтожается
+    public Father father;
 
     private Queue<GameObject> activePrefabs = new Queue<GameObject>(); // Очередь активных префабов
     public List<GameObject> easyPrefabs = new List<GameObject>(); // Лист с простыми префабами
@@ -111,10 +112,14 @@ public class RunnerManager : MonoBehaviour
 
     private IEnumerator SpawnMailPrefabPeriodically()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(timeToLaunchPostePrefab); // Задержка в 5 секунд
-            NeedMailPrefab();
+        if (father != null){
+            while (father.totalCatchedLetters < 7)
+            {
+                yield return new WaitForSeconds(timeToLaunchPostePrefab); // Задержка в 5 секунд
+                NeedMailPrefab();
+            }
+        } else {
+            Debug.Log("Надо назначить отца в Runner Manager. Отец почему-то не назначен в RunnerManager");
         }
     }
 }
