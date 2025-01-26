@@ -21,16 +21,16 @@ public class LetterCollector : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
         // Проверяем, столкнулись ли с объектом с тегом "Letter"
         if (other.CompareTag(letterTag))
         {
             CollectLetter(other.gameObject);
         }
-    }
+    }*/
     
-    void CollectLetter(GameObject letter)
+    public void CollectLetter(GameObject letter)
     {
         if (lettersCollected < letterSlots.Length)
         {

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Father : MonoBehaviour
@@ -7,17 +8,18 @@ public class Father : MonoBehaviour
     public float speed = 5f; 
     public float moveInput;
     // private float verticalSpeed = 0f;
-
+    private float currentTime = 0;
+    public int Age=0;
     // public float rollMult = -45;
     // public float pitchMult = 30;
 
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
-
+        currentTime +=Time.deltaTime;
         transform.Translate(new Vector3(moveInput * speed * Time.deltaTime, 0, 0));
         // transform.Translate(new Vector3(0, verticalSpeed * Time.deltaTime, 0));
-
+        
         //grid limit for father
         float clampedX = Mathf.Clamp(transform.position.x, -0.5f, 8+2.2f);
         transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
@@ -32,6 +34,14 @@ public class Father : MonoBehaviour
         if (moveInput>0)
         {
             SetDirection(2);
+        }
+        if (Age != 2){
+        if (currentTime>= 30)
+        {
+            currentTime = 0;
+            animator.SetInteger("Age", Age);
+            Age++;
+        }
         }
         // transform.rotation = Quaternion.Euler(moveInput*pitchMult, -1*moveInput*rollMult,0);
         // OnCollisionEnter2D();
