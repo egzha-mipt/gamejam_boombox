@@ -10,6 +10,9 @@ public class RunnerManager : MonoBehaviour
     public float time; // Интервал между спавном новых префабов
     public float spawnOffset = 7.2f; // Отступ между спавнами префабов
     public float timeToLaunchPostePrefab = 7f;
+    public GameObject ufoPrefab; 
+    public float ufoSpawnInterval = 15f;
+    
 
     public Transform spawnPoint; // Точка появления префаба
     public Transform destroyPoint; // Точка, после которой префаб уничтожается
@@ -42,6 +45,7 @@ public class RunnerManager : MonoBehaviour
 
         // Запускаем корутину для вызова события NeedMailPrefab каждые N секунд
         StartCoroutine(SpawnMailPrefabPeriodically());
+        StartCoroutine(SpawnUFOCoroutine());
     }
 
     void LoadPrefabs(string path, List<GameObject> prefabList)
@@ -120,6 +124,17 @@ public class RunnerManager : MonoBehaviour
             }
         } else {
             Debug.Log("Надо назначить отца в Runner Manager. Отец почему-то не назначен в RunnerManager");
+        }
+    }
+
+    private IEnumerator SpawnUFOCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(ufoSpawnInterval);
+
+            Vector3 spawnPosition = new Vector3(-10f, Random.Range(10f, 12f), 0f);
+            GameObject ufo = Instantiate(ufoPrefab, spawnPosition, Quaternion.identity);
         }
     }
 }

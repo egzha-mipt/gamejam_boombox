@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ace725fcf521a9b409acb38da6daeeec
+guid: 4d92990ace0100d4eba5a840054eb39b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4319134958064823024
-    second: "\u0441\u0442\u043E\u0440\u043E\u043D\u044B (2)_0"
+      213: 3901333750411442158
+    second: UFO_0
+  - first:
+      213: 760776873134828032
+    second: UFO_1
+  - first:
+      213: 7974080682413368635
+    second: UFO_2
+  - first:
+      213: 1904099725924694767
+    second: UFO_3
+  - first:
+      213: 6260705669898988991
+    second: UFO_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0441\u0442\u043E\u0440\u043E\u043D\u044B (2)_0"
+      name: UFO_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 0
-        width: 1905
-        height: 2703
+        x: 719
+        y: 1796
+        width: 1034
+        height: 622
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 015139fa3a95f04c0800000000000000
-      internalID: -4319134958064823024
+      spriteID: ee734873062542630800000000000000
+      internalID: 3901333750411442158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UFO_1
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 1800
+        width: 1034
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aa88c0982de8a00800000000000000
+      internalID: 760776873134828032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UFO_2
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 1800
+        width: 1034
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35ad85d120a9ae60800000000000000
+      internalID: 7974080682413368635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UFO_3
+      rect:
+        serializedVersion: 2
+        x: 4539
+        y: 1832
+        width: 1034
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaf8a4cc98bc6a10800000000000000
+      internalID: 1904099725924694767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UFO_4
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 632
+        width: 801
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd6a99d2ae72e650800000000000000
+      internalID: 6260705669898988991
       vertices: []
       indices: 
       edges: []
@@ -134,8 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\u0441\u0442\u043E\u0440\u043E\u043D\u044B (2)_0": -4319134958064823024
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

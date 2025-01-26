@@ -79,11 +79,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   easyPrefabsPath: GeneratedTiles/Easy
   hardPrefabsPath: GeneratedTiles/Hard
+  mailPrefabsPath: GeneratedTiles/Mail
   time: 0
   spawnOffset: 7.2
+  timeToLaunchPostePrefab: 7
+  ufoPrefab: {fileID: 0}
+  ufoSpawnInterval: 5
   spawnPoint: {fileID: 3162444264790550644}
   destroyPoint: {fileID: 3745566169046265558}
+  father: {fileID: 0}
   easyPrefabs: []
+  mailPrefabs: []
   hardPrefabs: []
 --- !u!1 &7927872510865581989
 GameObject:
