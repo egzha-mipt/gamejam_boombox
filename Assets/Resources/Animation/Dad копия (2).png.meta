@@ -1,0 +1,794 @@
+fileFormatVersion: 2
+guid: a796d6728a77e5b40831ac26360a6de4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3614647193669809356
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_0"
+  - first:
+      213: 4323456838634604875
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_1"
+  - first:
+      213: -7182647739364774696
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_2"
+  - first:
+      213: -7556342907181520383
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_3"
+  - first:
+      213: 423107866873787839
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_4"
+  - first:
+      213: -7703470052208921549
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_5"
+  - first:
+      213: -452123964555531880
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_6"
+  - first:
+      213: 1558036177487417913
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_7"
+  - first:
+      213: 4962236641855253927
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_8"
+  - first:
+      213: -7856966941038467932
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_9"
+  - first:
+      213: -2212171215803668200
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_10"
+  - first:
+      213: 4210256935805737178
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_11"
+  - first:
+      213: 8341221598500710854
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_12"
+  - first:
+      213: -6460764674127506080
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_13"
+  - first:
+      213: -6893156032489423001
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_14"
+  - first:
+      213: 9214159261564958135
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_15"
+  - first:
+      213: 6865236431632743349
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_16"
+  - first:
+      213: -4256512233146193513
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_17"
+  - first:
+      213: -6390445525135327892
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_18"
+  - first:
+      213: -8866646335508896533
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_19"
+  - first:
+      213: 4273568579180142871
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_20"
+  - first:
+      213: 4463500438995648487
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_21"
+  - first:
+      213: -1585173950713723875
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_22"
+  - first:
+      213: -2723202001800510214
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_23"
+  - first:
+      213: 9072268942129781074
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_24"
+  - first:
+      213: 4007649525721496571
+    second: "Dad \u043A\u043E\u043F\u0438\u044F (2)_25"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_0"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2788
+        width: 611
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abdb9eba439a544db0eb8a2e0d9ba28
+      internalID: -230130240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_1"
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2799
+        width: 613
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea3bba2b250534469b40a9d3ad0bf4a
+      internalID: 910443411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_2"
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 2804
+        width: 613
+        height: 1126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9be0a9c17ca2cb46868434037363fb5
+      internalID: -1380420418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_3"
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 2810
+        width: 610
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a81d9713d53c6f4fa1b5263b92112fe
+      internalID: -1518387713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_4"
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 2802
+        width: 613
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383769320cda54344b913f15df93ec03
+      internalID: -1529514946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_5"
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 3744
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26c2ec7a6c880243a3f0ddde4b969fd
+      internalID: 817776528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_6"
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 2793
+        width: 605
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f311d1d9b15ed42a66978ab4cb86db
+      internalID: 698787611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_7"
+      rect:
+        serializedVersion: 2
+        x: 5219
+        y: 3716
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82cd8e438299f74d9f74c63b86b82e2
+      internalID: 1257076541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_8"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1533
+        width: 613
+        height: 1129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec09e8539cfa9e40991144cdeb45f43
+      internalID: -1823126420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_9"
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1539
+        width: 611
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb76ba690811d1e4baccd7af367cc142
+      internalID: 1891316251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_10"
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 2472
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e448e09048672074690946bd035ad99c
+      internalID: -1258119780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_11"
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1549
+        width: 613
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7339d5f483cfee94fbfc3e5895349cdc
+      internalID: -1854917743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_12"
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 1533
+        width: 610
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bf29f2a4c4703478836554aa7d68aa
+      internalID: -1376941272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_13"
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 2480
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5887e832eda29429ac3974ded9742e
+      internalID: 1334496242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_14"
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 1541
+        width: 602
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a024f86216905c044b8ff2cbdf6c98ac
+      internalID: 784247658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_15"
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 1538
+        width: 605
+        height: 1129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aefd1ec1cccf5d46883456315685fd6
+      internalID: 583575231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_16"
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 246
+        width: 607
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869dbb4c3ce9d674484730d277a54dcb
+      internalID: -848991624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_17"
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 1375
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525bc01648a7f3346aede9799544395a
+      internalID: 1542823426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_18"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 241
+        width: 611
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592864c7cd7aa0f4c9607b701280315d
+      internalID: 594572880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_19"
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 216
+        width: 611
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec5d300f3d5dff40b250a65a75930e1
+      internalID: 2124998673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_20"
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 224
+        width: 608
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0839daaea24374fbf1a72e38935f22
+      internalID: -2110915695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_21"
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 241
+        width: 613
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dcc7d02e69cd7489e8f97def2b0404
+      internalID: 1079144063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_22"
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 1172
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a55283cad28af4584b74be10c15fa7
+      internalID: 1541715537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_23"
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 1172
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0614e28cdcae4243a3c76b222b45543
+      internalID: -434715537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_24"
+      rect:
+        serializedVersion: 2
+        x: 4402
+        y: 233
+        width: 604
+        height: 1131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47731a2de6ac16d4bb2182b180c00843
+      internalID: 1364355821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Dad \u043A\u043E\u043F\u0438\u044F (2)_25"
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 1033
+        width: 16
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba62a196690a8d43b377a5cfdfb3f51
+      internalID: 900032415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 39873668e1a60394aa2d97f164c8335f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_0": -230130240
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_1": 910443411
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_10": -1258119780
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_11": -1854917743
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_12": -1376941272
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_13": 1334496242
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_14": 784247658
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_15": 583575231
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_16": -848991624
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_17": 1542823426
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_18": 594572880
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_19": 2124998673
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_2": -1380420418
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_20": -2110915695
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_21": 1079144063
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_22": 1541715537
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_23": -434715537
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_24": 1364355821
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_25": 900032415
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_26": -725849892
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_3": -1518387713
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_4": -1529514946
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_5": 817776528
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_6": 698787611
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_7": 1257076541
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_8": -1823126420
+      "Dad \u043A\u043E\u043F\u0438\u044F (2)_9": 1891316251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

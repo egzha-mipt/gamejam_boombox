@@ -7,6 +7,7 @@ public class Father : MonoBehaviour
     public float speed = 5f; 
     public int totalCatchedLetters = 0;
     public int lettersToWin = 6; // Количество писем для победы
+    [SerializeField]private Animator animator;
 
 
     // private float verticalSpeed = 0f;
@@ -16,12 +17,14 @@ public class Father : MonoBehaviour
 
     public GameObject winScreen; // Экран победы (префаб или UI Canvas)
     public GameObject loseScreen; // Экран поражения (префаб или UI Canvas)
+    public LetterCollector letterCollector;
 
     void Start()
     {
         //экраны в изначально положение (неактивные)
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
+        letterCollector = GetComponent<LetterCollector>();
     }
     
     void Update()
@@ -38,6 +41,24 @@ public class Father : MonoBehaviour
         // transform.rotation = Quaternion.Euler(moveInput*pitchMult, -1*moveInput*rollMult,0);
         // OnCollisionEnter2D();
 
+        if (moveInput<0)
+            {
+                SetDirection(0);
+            }else
+            if (moveInput==0)
+            {
+                SetDirection(1);
+            }else
+            if (moveInput>0)
+            {
+                SetDirection(2);
+            }
+        // transform.rotation = Quaternion.Euler(moveInput*pitchMult, -1*moveInput*rollMult,0);
+        // OnCollisionEnter2D();
+    }
+    public void SetDirection(int direction)
+    {
+        animator.SetInteger("Direction", direction);
     }
     
     public void Die()
@@ -59,6 +80,7 @@ public class Father : MonoBehaviour
         if (collidedWith.tag == "Letter"){
             Debug.Log("Отец поймал письмо!");
             totalCatchedLetters++;
+            letterCollector.CollectLetter();
             Destroy(collidedWith);
         }
         if (totalCatchedLetters >= lettersToWin)
@@ -69,6 +91,11 @@ public class Father : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D collision)
     {
+        if (collision.tag == "Letter"){
+            Debug.Log("Отец поймал письмо!");
+            totalCatchedLetters++;
+            Destroy(collision);
+        }
         // GameObject collidedWith = collision.gameObject;
         GameObject collidedCell = collision.gameObject;
         if (collidedCell.tag == "KillCell")
