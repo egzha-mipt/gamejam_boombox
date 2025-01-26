@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Father : MonoBehaviour
 {
+    public AudioSource audioSource;
     public float speed = 5f; 
     public int totalCatchedLetters = 0;
     public int lettersToWin = 6; // Количество писем для победы
@@ -125,6 +126,7 @@ public class Father : MonoBehaviour
     void ShowLoseScreen()
     {
         Debug.Log("Экран проигрыша сработал");
+        audioSource.mute = true;
         // Активируем экран поражения
         if (loseScreen != null)
         {
