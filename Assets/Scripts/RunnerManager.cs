@@ -9,6 +9,7 @@ public class RunnerManager : MonoBehaviour
     public string mailPrefabsPath = "GeneratedTiles/Mail";
     public float time; // Интервал между спавном новых префабов
     public float spawnOffset = 7.2f; // Отступ между спавнами префабов
+    public float timeToLaunchPostePrefab = 7f;
 
     public Transform spawnPoint; // Точка появления префаба
     public Transform destroyPoint; // Точка, после которой префаб уничтожается
@@ -19,7 +20,7 @@ public class RunnerManager : MonoBehaviour
     public List<GameObject> hardPrefabs = new List<GameObject>(); // Лист со сложными префабами
     private bool nextPrefabsIsMail = false;
 
-    public void  NeedMailPrefab()
+    public void NeedMailPrefab()
     {
         nextPrefabsIsMail = true;
     }
@@ -33,10 +34,13 @@ public class RunnerManager : MonoBehaviour
         // Спавним первые три префаба с отступами
         for (int i = 0; i < 3; i++)
         {
-            Vector3 offsetPosition = spawnPoint.position ;
-            offsetPosition.y= offsetPosition.y+ spawnOffset * i;
+            Vector3 offsetPosition = spawnPoint.position;
+            offsetPosition.y = offsetPosition.y + spawnOffset * i;
             SpawnPrefab(offsetPosition);
         }
+
+        // Запускаем корутину для вызова события NeedMailPrefab каждые N секунд
+        StartCoroutine(SpawnMailPrefabPeriodically());
     }
 
     void LoadPrefabs(string path, List<GameObject> prefabList)
@@ -59,34 +63,29 @@ public class RunnerManager : MonoBehaviour
 
     void SpawnPrefab(Vector3 position)
     {
-        // Определяем сложность текущего префаба
-        GameObject currentPrefab= Random.value > 0.3f ? easyPrefabs[Random.Range(0,easyPrefabs.Count)] :hardPrefabs[Random.Range(0,hardPrefabs.Count)];
+        GameObject currentPrefab = Random.value > 0.3f
+            ? easyPrefabs[Random.Range(0, easyPrefabs.Count)]
+            : hardPrefabs[Random.Range(0, hardPrefabs.Count)];
 
-        // Если выбранный пул пуст, переключаемся на другой
-        //if (currentPool.Count == 0) currentPool = easyPrefabs;
-
-        //if (currentPool.Count > 0)
-        {
-
-
-            // Создаём префаб в сцене
-            GameObject newPrefab = Instantiate(currentPrefab, position, Quaternion.identity);
-            activePrefabs.Enqueue(newPrefab);
-        }
-    }
-    void SpawnMailPrefab(Vector3 position)
-    {
-        GameObject currentPrefab= mailPrefabs[Random.Range(0,mailPrefabs.Count)];
         GameObject newPrefab = Instantiate(currentPrefab, position, Quaternion.identity);
         activePrefabs.Enqueue(newPrefab);
-
     }
-    
+
+    void SpawnMailPrefab(Vector3 position)
+    {
+        GameObject currentPrefab = mailPrefabs[Random.Range(0, mailPrefabs.Count)];
+        GameObject newPrefab = Instantiate(currentPrefab, position, Quaternion.identity);
+        activePrefabs.Enqueue(newPrefab);
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            NeedMailPrefab();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Пробел нажат, но почта так не вылетает больше))");
+            // NeedMailPrefab();
         }
+
         if (activePrefabs.Count > 0)
         {
             GameObject firstPrefab = activePrefabs.Peek(); // Берём первый префаб в очереди
@@ -94,20 +93,28 @@ public class RunnerManager : MonoBehaviour
             // Проверяем, если он пересёк destroyPoint
             if (firstPrefab.transform.position.y < destroyPoint.position.y)
             {
-                if (nextPrefabsIsMail){
+                if (nextPrefabsIsMail)
+                {
                     SpawnMailPrefab(spawnPoint.position);
-                    nextPrefabsIsMail=false;
+                    nextPrefabsIsMail = false;
                 }
-                else{
+                else
+                {
                     SpawnPrefab(spawnPoint.position);
                 }
-                
+
                 activePrefabs.Dequeue(); // Убираем из очереди
                 Destroy(firstPrefab); // Уничтожаем объект
-                
-                // Спавним новый префаб вместо удалённого
-                
             }
+        }
+    }
+
+    private IEnumerator SpawnMailPrefabPeriodically()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(timeToLaunchPostePrefab); // Задержка в 5 секунд
+            NeedMailPrefab();
         }
     }
 }

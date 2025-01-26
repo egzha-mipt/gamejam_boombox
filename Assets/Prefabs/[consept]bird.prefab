@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterPrefab: {fileID: 4069367836990032616, guid: 60c29753c61afd548b066715150b1c2f, type: 3}
   spawnPoint: {fileID: 1805800493077552299}
-  minSpawnInterval: 1
-  maxSpawnInterval: 5
+  minSpawnInterval: 4
+  maxSpawnInterval: 15
   speed: -1
   direction: 1

@@ -12,7 +12,6 @@ public class BirdSpawner : MonoBehaviour
         {
             yield return null; // Ждём следующего кадра
         }
-        EventManager.Instance.OnPosteCellTriggered += SpawnBirdAfterDelay;
     }
 
     private void OnEnable()

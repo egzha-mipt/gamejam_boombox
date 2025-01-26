@@ -5,8 +5,8 @@ public class Bird : MonoBehaviour
 {
     public GameObject letterPrefab; 
     public Transform spawnPoint;
-    public float minSpawnInterval = 1f;
-    public float maxSpawnInterval = 5f;
+    public float minSpawnInterval = 4f;
+    public float maxSpawnInterval = 15f;
     public float speed = 1f;
     public float direction = -1f; // 1 - вправо, -1 - влево
     private bool hasDroppedLetter = false;
