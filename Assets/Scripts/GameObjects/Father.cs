@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.Serialization;
 using UnityEngine;
 
@@ -16,6 +17,13 @@ public class Father : MonoBehaviour
     public GameObject winScreen; // Экран победы (префаб или UI Canvas)
     public GameObject loseScreen; // Экран поражения (префаб или UI Canvas)
 
+    void Start()
+    {
+        //экраны в изначально положение (неактивные)
+        winScreen.SetActive(false);
+        loseScreen.SetActive(false);
+    }
+    
     void Update()
     {
         float moveInput = Input.GetAxis("Horizontal");
