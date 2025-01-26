@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class Father : MonoBehaviour
 {
+    [SerializeField]private Animator animator;
     public float speed = 5f; 
+    public float moveInput;
     // private float verticalSpeed = 0f;
 
     // public float rollMult = -45;
@@ -11,7 +13,7 @@ public class Father : MonoBehaviour
 
     void Update()
     {
-        float moveInput = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal");
 
         transform.Translate(new Vector3(moveInput * speed * Time.deltaTime, 0, 0));
         // transform.Translate(new Vector3(0, verticalSpeed * Time.deltaTime, 0));
@@ -19,7 +21,18 @@ public class Father : MonoBehaviour
         //grid limit for father
         float clampedX = Mathf.Clamp(transform.position.x, -0.5f, 8+2.2f);
         transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
-
+        if (moveInput<0)
+        {
+            SetDirection(0);
+        }else
+        if (moveInput==0)
+        {
+            SetDirection(1);
+        }else
+        if (moveInput>0)
+        {
+            SetDirection(2);
+        }
         // transform.rotation = Quaternion.Euler(moveInput*pitchMult, -1*moveInput*rollMult,0);
         // OnCollisionEnter2D();
     }
@@ -39,6 +52,10 @@ public class Father : MonoBehaviour
             Destroy(collidedWith);
         }
     }*/
+        public void SetDirection(int direction)
+    {
+        animator.SetInteger("Direction", direction);
+    }
 
     void OnTriggerEnter2D (Collider2D collision)
     {
