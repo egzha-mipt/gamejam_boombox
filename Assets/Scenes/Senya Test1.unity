@@ -2165,6 +2165,10 @@ PrefabInstance:
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 1422155555}
+    - target: {fileID: 5451784933691947926, guid: 786df3483cdce3241ba32b14931e7e4f, type: 3}
+      propertyPath: lettersToWin
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6114770961177669758, guid: 786df3483cdce3241ba32b14931e7e4f, type: 3}
       propertyPath: m_Name
       value: '[concept]-father-idle'
