@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6181325480371197009}
   - component: {fileID: 555169222887601492}
   - component: {fileID: 1619521075454772564}
+  - component: {fileID: 755677114000082797}
   m_Layer: 0
   m_Name: '[consept]bird'
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.09, y: 7.77, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.17, y: 0.17, z: 0.17}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1805800493077552299}
@@ -109,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 4875554543680829717, guid: c876ffe6b05c518419b464dff95830b9, type: 3}
+  m_Sprite: {fileID: -4462544756989265850, guid: 39147ab4f0d39f74fa56cf21f95cc0f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,3 +139,25 @@ MonoBehaviour:
   maxSpawnInterval: 15.4
   speed: -1
   direction: 1
+--- !u!95 &755677114000082797
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403196921256813625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b179c3ad542be3c48a155b0e1413a8f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
