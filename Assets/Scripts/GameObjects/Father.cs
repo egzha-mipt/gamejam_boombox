@@ -7,7 +7,11 @@ public class Father : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource lose;
     public float speed = 5f; 
+    public int Age;
+
     public int totalCatchedLetters = 0;
+    private float agingInterval = 30f;
+    private float timer;
     public int lettersToWin = 6; // Количество писем для победы
     [SerializeField]private Animator animator;
 
@@ -22,7 +26,8 @@ public class Father : MonoBehaviour
     public LetterCollector letterCollector;
 
     void Start()
-    {
+    {   
+        timer=agingInterval;
         //экраны в изначально положение (неактивные)
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
@@ -55,12 +60,33 @@ public class Father : MonoBehaviour
             {
                 SetDirection(2);
             }
+            timer -= Time.deltaTime;
+
+        if (timer <= 0f)
+        {
+            AgeUp(); // Увеличиваем возраст
+            timer = agingInterval; // Сбрасываем таймер
+        }
         // transform.rotation = Quaternion.Euler(moveInput*pitchMult, -1*moveInput*rollMult,0);
         // OnCollisionEnter2D();
     }
     public void SetDirection(int direction)
     {
         animator.SetInteger("Direction", direction);
+    }
+      private void AgeUp()
+    {
+        // Увеличиваем возраст, но не превышаем максимальный возраст (2)
+        if (Age < 2)
+        {
+            Age++;
+            animator.SetInteger("AGE",Age); // Устанавливаем параметр в Animator
+            Debug.Log("Возраст увеличен: " + Age);
+        }
+        else
+        {
+            Debug.Log("Игрок уже достиг максимального возраста.");
+        }
     }
     
     public void Die()
@@ -123,6 +149,7 @@ public class Father : MonoBehaviour
             Time.timeScale = 0f; // Останавливаем игру
         }
     }
+    
 
     void ShowLoseScreen()
     {

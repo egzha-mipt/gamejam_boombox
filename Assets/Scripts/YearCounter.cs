@@ -7,7 +7,7 @@ public class YearCounter : MonoBehaviour
 
     private float elapsedTime = 0f; // Прошедшее время
     private int yearsPassed = 0; // Сколько лет прошло
-    private const float secondsPerYear = 5f; // Секунд в одном году
+    private const float secondsPerYear = 4.5f; // Секунд в одном году
 
     void Update()
     {
