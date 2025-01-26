@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7448512523339585895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601837345263557405}
+  - component: {fileID: 7800438691659233831}
+  - component: {fileID: 374910860684998585}
+  m_Layer: 0
+  m_Name: TileGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601837345263557405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448512523339585895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29982156, y: 7.907054, z: 1.6407583}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7800438691659233831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448512523339585895}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938df7bb4c235704798c73b2ffd2ffe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileType1: {fileID: 3278567988440954381, guid: abcfa05c7e8b26644855770bc3c68a67, type: 3}
+  tileType2:
+  - {fileID: 8612833136220438460, guid: 7750484f566b4de4f86ae158ba9d8d55, type: 3}
+  - {fileID: 8612833136220438460, guid: 97b08c29a1fa556499bd8b767d683cee, type: 3}
+  rows: 5
+  cols: 8
+  height: 1.44
+  width: 1.44
+  prefabsToGenerate: 50
+  savePath: Assets/Prefabs/GeneratedTiles
+--- !u!114 &374910860684998585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7448512523339585895}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cb8c7b9dffb094c85d7f8f98bda834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileTypes:
+  - {fileID: 3278567988440954381, guid: abcfa05c7e8b26644855770bc3c68a67, type: 3}
+  - {fileID: 8612833136220438460, guid: 7750484f566b4de4f86ae158ba9d8d55, type: 3}
+  - {fileID: 5622820891658304335, guid: 0e1858782d3de114a8091e5e6cf51780, type: 3}
+  rows: 5
+  cols: 8
+  height: 1.44
+  width: 1.44
+  prefabsToGenerate: 10
+  savePath: Assets/Prefabs/GeneratedTiles
