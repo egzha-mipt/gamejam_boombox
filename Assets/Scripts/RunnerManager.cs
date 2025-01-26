@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class RunnerManager : MonoBehaviour
 {
-    public string easyPrefabsPath = "Prefabs/Easy"; // Путь к папке с простыми префабами
-    public string hardPrefabsPath = "Prefabs/Hard"; // Путь к папке со сложными префабами
-
+    public string easyPrefabsPath = "GeneratedTiles/Easy"; // Путь к папке с простыми префабами
+    public string hardPrefabsPath = "GeneratedTiles/Hard"; // Путь к папке со сложными префабами
+    public string mailPrefabsPath = "GeneratedTiles/Mail";
     public float time; // Интервал между спавном новых префабов
-    public float spawnOffset = 10f; // Отступ между спавнами префабов
+    public float spawnOffset = 7.2f; // Отступ между спавнами префабов
 
     public Transform spawnPoint; // Точка появления префаба
     public Transform destroyPoint; // Точка, после которой префаб уничтожается
 
     private Queue<GameObject> activePrefabs = new Queue<GameObject>(); // Очередь активных префабов
     public List<GameObject> easyPrefabs = new List<GameObject>(); // Лист с простыми префабами
+    public List<GameObject> mailPrefabs = new List<GameObject>();
     public List<GameObject> hardPrefabs = new List<GameObject>(); // Лист со сложными префабами
+    private bool nextPrefabsIsMail = false;
+
+    public void  NeedMailPrefab()
+    {
+        nextPrefabsIsMail = true;
+    }
 
     void Start()
     {
         LoadPrefabs(easyPrefabsPath, easyPrefabs); // Загружаем префабы из папки Easy
         LoadPrefabs(hardPrefabsPath, hardPrefabs); // Загружаем префабы из папки Hard
+        LoadPrefabs(mailPrefabsPath, mailPrefabs);
 
         // Спавним первые три префаба с отступами
         for (int i = 0; i < 3; i++)
@@ -52,7 +60,7 @@ public class RunnerManager : MonoBehaviour
     void SpawnPrefab(Vector3 position)
     {
         // Определяем сложность текущего префаба
-        GameObject currentPrefab= Random.value > 0.5f ? easyPrefabs[Random.Range(0,easyPrefabs.Count)] :easyPrefabs[Random.Range(0,easyPrefabs.Count)];
+        GameObject currentPrefab= Random.value > 0.3f ? easyPrefabs[Random.Range(0,easyPrefabs.Count)] :hardPrefabs[Random.Range(0,hardPrefabs.Count)];
 
         // Если выбранный пул пуст, переключаемся на другой
         //if (currentPool.Count == 0) currentPool = easyPrefabs;
@@ -66,9 +74,19 @@ public class RunnerManager : MonoBehaviour
             activePrefabs.Enqueue(newPrefab);
         }
     }
-
-    void LateUpdate()
+    void SpawnMailPrefab(Vector3 position)
     {
+        GameObject currentPrefab= mailPrefabs[Random.Range(0,mailPrefabs.Count)];
+        GameObject newPrefab = Instantiate(currentPrefab, position, Quaternion.identity);
+        activePrefabs.Enqueue(newPrefab);
+
+    }
+    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            NeedMailPrefab();
+        }
         if (activePrefabs.Count > 0)
         {
             GameObject firstPrefab = activePrefabs.Peek(); // Берём первый префаб в очереди
@@ -76,7 +94,14 @@ public class RunnerManager : MonoBehaviour
             // Проверяем, если он пересёк destroyPoint
             if (firstPrefab.transform.position.y < destroyPoint.position.y)
             {
-                SpawnPrefab(spawnPoint.position);
+                if (nextPrefabsIsMail){
+                    SpawnMailPrefab(spawnPoint.position);
+                    nextPrefabsIsMail=false;
+                }
+                else{
+                    SpawnPrefab(spawnPoint.position);
+                }
+                
                 activePrefabs.Dequeue(); // Убираем из очереди
                 Destroy(firstPrefab); // Уничтожаем объект
                 
